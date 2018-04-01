@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">Sandi_Lite</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="app_name">Sandi Lite</string>
+	<!-- splash -->
+	<string name="splash_action_starting_app">Starting App...</string>
+	<string name="splash_action_loadimg_resources">Loading Resources...</string>
+	<string name="main_firstusage">
+		"Since this application is still alpha and lite version, I'm so sorry if this app is not suitable with your planning. And if any problem occured in this app, please take a few minute for contact me in: \n\nPhone+WA : +6285742602872\n\nE-mail: purwoko908@gmail.com\nPlease for your attention to give an opinion of this app.\nThanks for your attention.\n\nRegards, \nAlexzander Purwoko Widiantoro"</string>
+	<string name="main_tell_user_convertanytime">"Do you want to activate 'AnyTime Converter'?'\n\nConvert AnyTime is useful to start any app features without open the app from beginning, and save your time"</string>
+	<string name="main_tell_user_startatboot">"Do you want to activate 'Run as boot'?\n\nRun as boot is used to start a AnyTime Converter service while the phone finished the boot"</string>
+	<string name="main_tell_user_moresetting">"More Setting is in Setting icon"</string>
+	<string name="OK_BUTTON">Okay</string>
+	<string name="NO_BUTTON">No, Thanks</string>
+	<string name="CANCEL_BTN">Cancel</string>
+	<string name="COPY_BTN">Copy</string>
+	<!-- SettingPreference -->
+	<string name="pref_category">Converter Options</string>
+	<string name="pref_cbp_convserv_title">Enable Convert AnyTime</string>
+	<string name="pref_cbp_convserv_summary">Enabling Convert Anytime is useful to use app features without opening app normally</string>
+	<string name="pref_cbp_convservboot_title">Run on boot</string>
+	<string name="pref_cbp_convservboot_summary">Enable Convert AnyTime while phone is booting</string>
+	<!-- Notification Service -->
+	<string name="notif_str_title">AnyTime Converter </string>
+	<string name="notif_str_content">Select any action button below...</string>
+	<string name="notif_str_convert_action">Convert</string>
+	<string name="notif_str_convert_close">Close</string>
+	<string name="notif_str_convert_ticker">AnyTime Converter Started...</string>
+	<string name="thanks_to">
+		"-\tAIDE Appfour\n-\tStack Overflow\n-\tdeveloper.android.com\n-\tAndroid Support Library\n-\tTutorialspoint\n-\tMyLexz Library"
+	</string>
+	<string name="cn_serv">
+		"-\tPhone+WhatsApp\t: +6285742602872\n-\tE-mail\t\t: purwoko908@gmail.com\n\n"
+	</string>
+	
 </resources>

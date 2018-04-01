@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- splash -->
+	<string name="splash_action_starting_app">Memulai Aplikasi...</string>
+	<string name="splash_action_loadimg_resources">Mengelola Data...</string>
+	<string name="main_firstusage">
+		"Karena aplikasi ini masih versi alpha dan versi lite, mohon maaf apabila aplikasi ini tidak sesuai dengan keinginan anda. Dan apabila masih terdapat bug yang tersedia dalam aplikasi ini, tolong untuk menghubungi saya di:\n\nPhone+WA : +6285742602872\nE-mail: purwoko908@gmail.com\n\nMohon partisipasi anda untuk memberikan pendapat tentang aplikasi ini. \nAtas Partisipasinya, saya ucapkan terima kasih. \n\nSalam, \nAlexzander Purwoko Widiantoro"</string>
+	<string name="main_tell_user_convertanytime">"Apakah anda ingin mengaktifkan 'Konversi kapan saja'?\n\nKonversi kapan saja berguna untuk menjalankan fitur aplikasi ini tanpa membuka aplikasi dari awal, serta menghemat waktu anda."</string>
+	<string name="main_tell_user_moresetting">"Opsi lain dapat dilihat di Ikon Opsi"</string>
+	<string name="main_tell_user_startatboot">"Apakah anda ingin mengaktifkan 'Jalankan Saat booting'?\n\nJalankan saat boot digunakan untuk memulai 'Konversi kapan saja' saat telepon sudah booting."</string>
+	<string name="OK_BUTTON">Oke</string>
+	<string name="NO_BUTTON">Tidak, Terimakasih</string>
+	<string name="CANCEL_BTN">Batalkan</string>
+	<string name="COPY_BTN">Salin</string>
+	<string name="pref_category">Opsi Konversi</string>
+	<string name="pref_cbp_convserv_title">Aktifkan Konversi Kapan Saja</string>
+	<string name="pref_cbp_convserv_summary">Mengaktifkan Konversi Kapan Saja berguna untuk menggunakan fitur aplikasi tanpa membuka aplikasi secara normal</string>
+	<string name="pref_cbp_convservboot_title">Jalankan saat boot</string>
+	<string name="pref_cbp_convservboot_summary">Mengaktifkan Konversi kapan saja saat booting</string>
+	<string name="notif_str_title">Konversi kapan saja</string>
+	<string name="notif_str_content">Pilih tombol aksi dibawah...</string>
+	<string name="notif_str_convert_action">Konversi</string>
+	<string name="notif_str_convert_close">Tutup</string>
+	<string name="notif_str_convert_ticker">Konversi kapan saja diaktifkan...</string>
+</resources>

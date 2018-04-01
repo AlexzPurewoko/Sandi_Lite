@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/useractiv_linear_base">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="@android:drawable/dialog_holo_light_frame"
+		android:layout_margin="@dimen/onuser_linear1_margin"
+		android:id="@+id/onuser_linear3ch">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_margin="@dimen/onuser_relative_margin"
+			android:background="#F2F2F2"
+			android:id="@+id/onuser_relative1">
+
+			<Spinner
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textColor="#000000"
+				style="@android:style/Widget.Holo.Spinner"
+				android:id="@+id/onuser_spinnerFrom"/>
+
+			<ImageButton
+				android:layout_height="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_arrow_compare"
+				android:layout_centerInParent="true"
+				android:id="@+id/onuser_compare"/>
+
+			<Spinner
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textColor="#000000"
+				android:layout_alignParentRight="true"
+				android:id="@+id/onuser_spinnerTo"/>
+
+		</RelativeLayout>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="match_parent"
+			android:textColor="#000000"
+			android:layout_margin="@dimen/onuser_edtText_margin"
+			android:layout_marginTop="0dp"
+			android:maxLines="2"
+			android:id="@+id/onuser_input"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:weightSum="5"
+			android:layout_margin="@dimen/onuser_linear2_margin"
+			android:layout_marginTop="0dp"
+			android:background="#F2F2F2"
+			android:id="@+id/onuser_linear2">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:layout_width="0dp"
+				android:layout_weight="4"
+				android:background="#F2F2F2"
+				android:id="@+id/onuser_output"/>
+
+			<ImageButton
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				style="?android:attr/buttonBarButtonStyle"
+				android:src="@drawable/ic_content_copy_black"
+				android:id="@+id/onuser_copy"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

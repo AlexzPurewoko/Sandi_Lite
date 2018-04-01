@@ -1,11 +1,104 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:layout_margin="@dimen/main_linear_margin">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/main_spinner_from"/>
+
+		<ImageButton
+			android:layout_height="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_width="wrap_content"
+			android:src="@drawable/ic_arrow_compare"
+			android:layout_centerInParent="true"
+			android:id="@+id/main_img_btn_compare"/>
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:id="@+id/main_spinner_to"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_height="@dimen/main_linear_lyt_edtform"
+		android:layout_width="match_parent"
+		android:layout_marginTop="@dimen/main_all_margintop_dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/main_txtFrom"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="@dimen/main_all_margintop_dp"
+			android:id="@+id/main_editfrom"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:weightSum="2"
+		android:layout_gravity="center"
+		android:gravity="center">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="CONVERT"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:id="@+id/main_btn_convert"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="CLEAR"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:id="@+id/main_btn_clear"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_marginTop="@dimen/main_txt_result_margintop"
+		android:id="@+id/main_txtTo"/>
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:layout_marginTop="@dimen/main_txt_result_margintop"
+				android:id="@+id/main_txt_result"/>
+
+		</LinearLayout>
+
+	</ScrollView>
 
 </LinearLayout>
+

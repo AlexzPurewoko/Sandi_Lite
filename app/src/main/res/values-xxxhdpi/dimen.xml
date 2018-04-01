@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- values xxxhdpi -->
+
+<resources>
+	<!-- splash activity -->
+	<dimen name="splash_progress_mbottom"> 64dp </dimen>
+	<dimen name="splash_txt1prog_mbottom"> 16dp </dimen>
+	<dimen name="splash_txt2judul_mbottom"> 256dp </dimen>
+	<dimen name="splash_imageview_mbottom"> 32dp </dimen>
+	<dimen name="splash_txt2judul_textsize"> 128sp </dimen>
+	<!-- Main Activity -->
+	<dimen name="main_linear_margin"> 12dp </dimen>
+	<dimen name="main_all_margintop_dp"> 10dp </dimen>
+	<dimen name="main_txt_result_margintop"> 10dp </dimen>
+	<dimen name="main_linear_lyt_edtform"> 464dp </dimen>
+	<!-- On User Activity -->
+	<dimen name="onuser_linear1_margin"> 18dp </dimen>
+	<dimen name="onuser_relative_margin"> 10dp </dimen>
+	<dimen name="onuser_edtText_margin"> @dimen/onuser_relative_margin </dimen>
+	<dimen name="onuser_linear2_margin"> @dimen/onuser_relative_margin </dimen>
+	<!-- About Activity -->
+	<dimen name="about_margin_20"> 80dp </dimen>
+	<dimen name="about_margin_27"> 108dp </dimen>
+</resources>

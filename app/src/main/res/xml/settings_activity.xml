@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PreferenceScreen
+		xmlns:android="http://schemas.android.com/apk/res/android">
+		<PreferenceCategory
+			android:title="@string/pref_category">
+			<CheckBoxPreference
+				android:key="START_CONV_SERV"
+				android:title="@string/pref_cbp_convserv_title"
+				android:summary="@string/pref_cbp_convserv_summary"
+				/>
+			<CheckBoxPreference
+				android:key="SETCONV_ONBOOT"
+				android:title="@string/pref_cbp_convservboot_title"
+				android:summary="@string/pref_cbp_convservboot_summary"
+				/>
+		</PreferenceCategory>
+	</PreferenceScreen>

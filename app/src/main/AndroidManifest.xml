@@ -1,22 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mylexz.sandi.lite" >
-
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-		android:resizeableActivity = "true">
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
-</manifest>
+	package="com.mylexz.sandi.lite">
+<application 
+	android:allowBackup="true"
+	android:icon="@drawable/ic_launcher"
+	android:label="@string/app_name"
+	android:resizeableActivity = "true"
+	android:debuggable="true">
+	<activity android:name=".SplashActivity"
+		android:label="@string/app_name"
+		android:theme="@style/splash"
+		android:noHistory="true">
+		<intent-filter>
+			<action android:name="android.intent.action.MAIN" />
+			<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+	</activity>
+	<activity
+		android:alwaysRetainTaskState="true" 
+		android:name=".MainActivity" 
+		android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+		<intent-filter>
+			<action android:name="android.intent.action.MAIN" />
+			<category android:name="android.intent.category.SAMPLE_CODE" />
+		</intent-filter>
+	</activity>
+	<activity 
+	android:noHistory="true" 
+	android:name=".MainUserActivity" 
+	android:taskAffinity="com.mylexz.sandi.lite.task_user"
+	android:theme="@style/Theme.Transparent">
+	</activity>
+	<activity 
+		android:label="About" 
+		android:name=".AboutActivity" 
+		android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+		android:parentActivityName=".MainActivity">
+		<meta-data
+			android:name="android.support.PARENT_ACTIVITY"
+			android:value=".MainActivity"/>
+		
+	</activity>
+	<activity
+		android:label="Settings"
+		android:name=".SettingsActivity"
+		android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+		/>
+	<receiver
+		android:name=".StartAtBoot" >
+		<intent-filter>
+			<action android:name="com.mylexz.sandi.lite.ACTION_USER_ANYTIME"/>
+			<action android:name="android.intent.action.BOOT_COMPLETED"/>
+		</intent-filter>
+	</receiver>
+	<service 
+		android:name=".NotificationService"
+		android:exported="false"/>
+	<receiver
+		android:name=".StopNotifServiceReceiver"
+		android:enabled="true"
+		android:process=":remote"/>
+</application>
+<uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name = "android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name = "android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest> 

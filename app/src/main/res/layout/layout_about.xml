@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_margin="@dimen/main_linear_margin">
+
+		<ImageView
+			android:layout_height="@android:dimen/thumbnail_height"
+			android:layout_width="@android:dimen/thumbnail_width"
+			android:src="@drawable/ic_splash"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/about_margin_20"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Sandi Lite"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center"
+			android:textSize="@dimen/splash_txt2judul_textsize"
+			android:layout_marginTop="@dimen/main_linear_margin"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Copyright @2018 by Alexzander Purwoko Widiantoro"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/main_txt_result_margintop"/>
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Alpha Version"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/main_txt_result_margintop"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Thanks To :"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="@dimen/about_margin_27"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="@string/thanks_to"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="@dimen/main_all_margintop_dp"
+			android:layout_marginLeft="@dimen/about_margin_20"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Contact Person :"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="@dimen/about_margin_20"/>
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="@string/cn_serv"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="@dimen/main_all_margintop_dp"
+			android:layout_marginLeft="@dimen/about_margin_20"/>
+	</LinearLayout>
+</ScrollView>
