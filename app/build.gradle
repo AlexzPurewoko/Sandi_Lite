@@ -20,6 +20,7 @@ android {
 }
 
 dependencies {
+	compile project(':MyLEXZ-Library')
 	compile 'com.android.support:support-v4:25.3.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
